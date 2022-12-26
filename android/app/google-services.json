@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "950754981884",
+    "project_id": "mlbv2-486f3",
+    "storage_bucket": "mlbv2-486f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950754981884:android:45f423dfbac6b6d35f2479",
+        "android_client_info": {
+          "package_name": "com.example.myloanbhai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950754981884-q9qs01bacf0so58nsdmhhi8asrnif8oc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABErEkjBEz46ZbaLt4hurnpXbphCEH0-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950754981884-q9qs01bacf0so58nsdmhhi8asrnif8oc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "950754981884-vho7vdgchtlmfakf29v390nkumqc8qvl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.myloanbhai"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

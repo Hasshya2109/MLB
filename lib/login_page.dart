@@ -20,16 +20,16 @@ class _LoginPageState extends State<LoginPage> {
       body: Container(
         width: w,
         height: h,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("img/Banner-background.jpg"),
                 fit: BoxFit.cover)),
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 104, horizontal: 50),
+          padding: const EdgeInsets.symmetric(vertical: 104, horizontal: 50),
           child: Column(
             children: [
               Row(
-                children: [
+                children: const [
                   Text(
                     "My",
                     style: TextStyle(
@@ -70,17 +70,17 @@ class _LoginPageState extends State<LoginPage> {
                           boxShadow: [
                             BoxShadow(
                                 blurRadius: 10,
-                                offset: Offset(1, 1),
+                                offset: const Offset(1, 1),
                                 color: Colors.red.withOpacity(0.5))
                           ]),
                       child: TextField(
                         decoration: InputDecoration(
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.red)),
+                              borderSide: const BorderSide(color: Colors.red)),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.red)),
+                              borderSide: const BorderSide(color: Colors.red)),
                           hintText: 'Phone Number',
                         ),
                       ))
@@ -100,17 +100,17 @@ class _LoginPageState extends State<LoginPage> {
                           boxShadow: [
                             BoxShadow(
                                 blurRadius: 10,
-                                offset: Offset(1, 1),
+                                offset: const Offset(1, 1),
                                 color: Colors.red.withOpacity(0.5))
                           ]),
                       child: TextField(
                         decoration: InputDecoration(
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.red)),
+                              borderSide: const BorderSide(color: Colors.red)),
                           enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.red)),
+                              borderSide: const BorderSide(color: Colors.red)),
                           hintText: 'Password',
                         ),
                       ))
@@ -122,8 +122,8 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: w*0.35),
-                    child: Text(
+                    margin: EdgeInsets.only(left: w * 0.35),
+                    child: const Text(
                       "Forget Password?",
                       style: TextStyle(
                         fontSize: 15,
@@ -137,24 +137,23 @@ class _LoginPageState extends State<LoginPage> {
                 height: w * 0.15,
               ),
               SizedBox(
-                width: w*0.4,
+                width: w * 0.4,
                 child: ElevatedButton(
                   onPressed: () {
-                    Get.to(SignUpPage());
+                    Get.to(const SignUpPage());
                   },
                   style: ButtonStyle(
                     foregroundColor:
-                    MaterialStateProperty.all<Color>(Colors.white),
+                        MaterialStateProperty.all<Color>(Colors.white),
                     backgroundColor:
-                    MaterialStateProperty.all<Color>(Colors.red),
-                    shape:
-                    MaterialStateProperty.all<RoundedRectangleBorder>(
+                        MaterialStateProperty.all<Color>(Colors.red),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(34.0),
                       ),
                     ),
                   ),
-                  child: Padding(
+                  child: const Padding(
                     padding: EdgeInsets.all(12.0),
                     child: Text(
                       'Login',
@@ -169,29 +168,22 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 children: [
                   Container(
-                      margin: EdgeInsets.only(left: w*0.08),
+                      // margin: EdgeInsets.only(left: w * 0.08),
                       child: RichText(
                           text: TextSpan(
                               text: "Don't have an account?",
-                              style:
-                                  TextStyle(color: Colors.black, fontSize: 20),
+                              style: const TextStyle(
+                                  color: Colors.black, fontSize: 20),
                               children: [
-                            TextSpan(
-                              text: " Create",
-                              style: TextStyle(
-                                  color: Colors.blue,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold),
-                                recognizer: TapGestureRecognizer()..onTap=()=>Get.to(()=>SignUpPage())
-
-                            )
-
-                          ]
-                          )
-
-                      )
-
-                  ),
+                        TextSpan(
+                            text: " Create",
+                            style: const TextStyle(
+                                color: Colors.blue,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () => Get.to(() => const SignUpPage()))
+                      ]))),
                 ],
               ),
             ],
